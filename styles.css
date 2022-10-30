@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{ 
+    display: block;
+    background: #256D85;
+}
+
+/*-----------------------Navbar-------------------------*/
+header {
+    background-color: #06283D;
+    border-radius: 10px;
+}
+
+.navbar {
+   min-height: 70px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 24px;
+}
+
+.navbar_logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a:hover {
+    opacity: 0.65;
+}
+
+.burger_menu {
+    display: block;
+    cursor: pointer;
+}
+
+.burger_menu:hover {
+    opacity: 0.65;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
