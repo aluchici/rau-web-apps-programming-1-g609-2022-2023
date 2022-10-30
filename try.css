@@ -1,0 +1,22 @@
+
+body{
+  background: url(https://wallpaperaccess.com/download/4k-amazing-269413);
+background-position:top;
+background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+.slideBar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%
+  width 260px;
+  background: #11101d;
+}

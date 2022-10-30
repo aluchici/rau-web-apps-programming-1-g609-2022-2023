@@ -1,0 +1,144 @@
+<!--Antonio, versiunea 1.0-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">   
+    <title>Gigel Bank</title>  
+    <link rel="stylesheet" href="try.css">  
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background:;
+    }
+    nav{
+      width: 100%;
+      background:black;
+      overflow:auto;
+    }
+    ul {
+      padding: 0;
+      margin: 0 0 0 150px;
+      list-style:none;
+    }
+    li{
+      float:left;
+    }
+    .log img{
+    position:absolute;
+    margin-top:15px;
+    margin-left:10px;
+    }
+    nav a{
+      width: 120px;  /* Hanna: am creat mai mult spatiu. */
+      display: block;
+      padding: 20px 15px;
+      text-decoration: none;
+      font-family: Arial;
+      color: #f2f2f2;
+    }
+
+    .top-level{
+        text-align: center;
+    }
+    
+    .top-level:hover{ /* am schimbat proprietatile lui hover sa fie doar pentru top-level si nu pentru tot ce mosteneste nav a */
+      background:red;
+      transition:0.5;
+      /* Hanna - parerea mea, arata mai bine fara transformare in uppercase text-transform: uppercase; */
+    }
+    
+   .dropdown {
+        display: none;
+        position: absolute;
+        color: black;
+        background-color: white;
+        min-width: 200px;
+        white-space: nowrap;
+        z-index: 1;
+    }
+
+   .top-level:hover .dropdown {
+     display: block;
+     border-color:white;
+     border-style: solid;
+   }
+
+
+    .dropdown a{
+        color: black;
+        padding: 10px 10px 10px 10px;
+        text-align: left;
+    }
+
+    .dropdown a:hover{
+        background-color: black;
+        min-width: 200px;
+        color: white;
+    }
+
+    
+
+    </style>
+    </head>
+    <body>
+    <div style="position:absolute; left:5px;top:-50px;" class="log"><a href="#"><img  src="GigelBank.png" width="140" height= "140" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li>  "  "   </li> <!--Hanna: am adaugat un pic de spatiu pentru partea rosie sa nu suprapuna asupra logo "Gigel Bank"-->
+        <li><a href="home.html" class="top-level"> Home </a></li> <!--Hanna: am schimbat numele fisierul sa fie "home.html" si am pus navigation bar sa se refere la page-->
+        <li>
+            <div class="top-level">
+            <!--Hanna: in general am adaugat drop-down meniuri, sa aveti grija cand schimbati style pentru ca
+                m-am bazat pe schelet pe care Antonio a pus si anumite chestii sunt legate de a si altele de div
+                si altele de class (probabil ar fi bine sa simplifice intr-o zi)...-->
+                <a href="#"> Conturi </a>           
+                <div class="dropdown">
+                    <a href="#">Cont curent </a>
+                    <a href="#">Cont pentru tineri </a>
+                </div>
+            </div>
+        </li>
+        <li><div class="top-level">
+            <a href="#"> Credite </a>
+                <div class="dropdown">
+                <a href="#">Credite pentru indivizi </a>
+                <a href="#">Credite pentru afaceri </a>
+                <a href="#">Card de credit </a>
+                </div>
+            </div>
+        </li>
+            
+        <li><div class="top-level">
+            <a href="#"> Economii </a>
+                <div class="dropdown">
+                <a href="#">Cont de economii </a>
+                <a href="#">Economii pe termen lung </a>
+                <a href="#">Economii pentru copii </a>
+                </div>
+            </div></li>
+        <li><div class="top-level">
+            <a href="#"> Investitii </a>
+                <div class="dropdown">
+                <a href="#">Fonduri mutuale </a>
+                <a href="#">Actiuni </a>
+                <a href="#">The Gigel Special </a>
+                <a href="#">Cripto </a>
+                </div>
+            </div></li>
+        <li><div class="top-level">
+            <a href="#"> About Gigel </a>
+                <div class="dropdown">
+                <a href="#">Povestea lui Gigel </a>
+                <a href="#">Prospectul firmei </a>
+                <a href="#">Cariere la GigelBank </a>
+                </div>
+            </div></li>
+        <li><a href="#" class="top-level"> Contact </a></li>
+        
+      </ul>
+    </nav>
+    </body>
+    </html>
