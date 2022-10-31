@@ -1,8 +1,10 @@
 
 body{
   background: url(https://wallpaperaccess.com/download/4k-amazing-269413);
-background-position:top;
-background-size: cover;
+background-attachment: fixed; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; /*am schimbat background sa ramana la fel chiar daca adaugam mai mult continut si avem scroll*/
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');

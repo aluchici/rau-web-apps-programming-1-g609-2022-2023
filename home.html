@@ -14,21 +14,26 @@
     }
     nav{
       width: 100%;
-      background:black;
+      background: black; /*Nu inteleg de ce ignora background aici... rezolvarea problemei ar rezulta in rezolvaream problemei si pentru text care scrolleaza asupra meniu*/
       overflow:auto;
     }
     ul {
+      position:fixed; /*am pus fixed aici in loc de nav ca sa nu avem probleme cu toate elementele fiind puse in acelasi loc...*/
       padding: 0;
-      margin: 0 0 0 150px;
+      margin: 0 0 0 140px;
       list-style:none;
     }
     li{
       float:left;
     }
     .log img{
-    position:absolute;
-    margin-top:15px;
-    margin-left:10px;
+    margin-top: 500px;
+    margin-left:0px;
+    margin-right: 0px;
+    height: 58px;
+    width: 140px;
+    background: black;
+    margin: 0px;
     }
     nav a{
       width: 120px;  /* Hanna: am creat mai mult spatiu. */
@@ -78,16 +83,62 @@
         color: white;
     }
 
+    .sidebar /* am schimbat sa fie o pozitie fixata sa mereu fie sidebar la dreapta chiar daca facem scroll*/
+    { 
+      position: fixed;
+      right: 0;
+      top: 40px;
+      width: 500px;
+        float: right;
+    }
+
+    .trim
+    {
+      margin: 0px;
+      object-position: top;
+      object-fit: scale-down;
+     /* overflow: hidden;*/
+    }
+
     
+    .left-indent {
+      margin-left: 25%;
+      color: white;
+    }
+
+    .link {
+      text-align: center;
+      color: white;
+      font-style: underline;
+    }
+    .link a {
+      color: white;
+    }
+
+    .button {
+      padding: 10px 30px 10px 30px;
+      color: white;
+      background-color: green;
+    }
+
+    .button:hover {
+      background-color: darkgreen;
+    }
+
+    p {
+      z-index: 1;
+
+    }
 
     </style>
     </head>
     <body>
-    <div style="position:absolute; left:5px;top:-50px;" class="log"><a href="#"><img  src="GigelBank.png" width="140" height= "140" /></a>
+      <br>
+    <div style="position: fixed; left:0px;top:18px;" class="log"><a href="#"><img src="GigelBankCrop.png" width="150" height= "100" /></a>
+      <!--am schimbat pozitie sa fie fixed in loc de absolut-->
     </div>
     <nav>
       <ul>
-        <li>  "  "   </li> <!--Hanna: am adaugat un pic de spatiu pentru partea rosie sa nu suprapuna asupra logo "Gigel Bank"-->
         <li><a href="home.html" class="top-level"> Home </a></li> <!--Hanna: am schimbat numele fisierul sa fie "home.html" si am pus navigation bar sa se refere la page-->
         <li>
             <div class="top-level">
@@ -136,9 +187,70 @@
                 <a href="#">Cariere la GigelBank </a>
                 </div>
             </div></li>
-        <li><a href="#" class="top-level"> Contact </a></li>
-        
+        <li><a href="#" class="top-level"> Contact </a></li>        
       </ul>
     </nav>
-    </body>
+    <div class="sidebar">
+    <center><img class="trim" src="Gigel Opaque 2.jpg"></center>
+    <div class="left-indent">
+      <br><br><br>
+      <label for="login-id">Login: &nbsp &nbsp &nbsp  </label>
+      <input type="text" id="login-id" name="login-id">
+    </div>
+    <br>
+    <div class="left-indent">
+      <label for="login-id">Parola: &nbsp &nbsp  </label>
+      <input type="text" id="login-id" name="login-id">
+  </div>
+  <br>
+  <br>
+  <center> <button class="button">Transmite</button></center>
+  <br>
+    <br><br>
+    <div class="link"><a href="#">Nu ai un cont? Inscrie-te! </a></div>
+    </div>
+  <font color="white">
+    <br><br><br><br><br><br><br>
+<br> <!--am o problema aici... textul se pune asupra meniuri cand facem scroll-->
+<p>Momentan am pus textul acesta sa testam daca merge bine pozitie fix pentru meniuri si login.</p>
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+<br><br><br>
+money
+
+
+  </font>
+  </body>
     </html>
