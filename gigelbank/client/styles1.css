@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background:; */
+}
+
+
+.bg {
+  background-image: url("assets/GigelBkgd.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 0.2fr repeat(11, 1fr);
+}
+
+.grid-logo {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.logo-image { /*Hanna: Ce ziceti sa punem width si height 100% pentru a ocupa tot spatiul in celula, in loc sa fie valoare absoluta, pentru ca trebuie si ala sa schimbe dynamic cu ecran daca restul se schimba proportional.*/
+  width: 100%;
+  height: 100%;
+}
+
+.grid-nav {
+    text-align: center; 
+    background-color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.grid-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.grid-nav:hover {
+  background-color: darkgreen;
+  transition:0.5;
+  color:Black;
+}
+
+
+.dropdown {
+  display: none;
+  margin-top: 1.1%;
+}
+.grid-nav:hover .dropdown {
+  display: block;
+  position: absolute;
+  background-color: white;
+  min-width: 15%;
+  border-color:white;
+  border-style: solid;
+  border-width: 0.1rem;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  z-index: 1;
+}
+
+
+.dropitem {
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+}
+
+.dropitem a {
+  color: black;
+}
+
+.dropitem:hover {
+  background-color: black;
+}
+
+.dropitem:hover a{
+  color:white;
+}
+
+.grid-home {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+.grid-cont {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+.grid-credite {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.grid-economii {
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+
+.grid-investitii {
+  grid-row-start: 1;
+  grid-column-start: 6;
+  grid-column-end: 6;
+}
+
+.grid-about {
+  grid-row-start: 1;
+  grid-column-start: 7;
+  grid-column-end: 7;
+}
+
+.grid-contact {
+  grid-row-start: 1;
+  grid-column-start: 8;
+  grid-column-end: 8;
+}
+
+.grid-nav-empty {
+  grid-row-start: 1;
+  grid-column-start: 9;
+  grid-column-end: 12;
+  background-color: black;
+}

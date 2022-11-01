@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">  
+        <link rel="stylesheet" href="styles1.css">
+        <style>
+            </style>
+        <script>
+            /*
+            function changeDropOnResize()
+            {
+                var d = document.querySelector(".dropdown");
+                if (window.innerWidth >= 1700){
+                    d.setAttribute('style', 'margin-top: 1.1%');
+                    alert("changed big");
+                }
+                else if (window.innerWidth >= 900 && window.innerWidth < 1700){
+                    d.setAttribute('style', 'margin-top: 0.3%');
+                    alert("changed middle");
+                }
+                else {
+                    d.setAttribute('style', 'margin-top: 0%');
+                    alert("changed small");
+                } 
+            }
+            window.onresize = changeDropOnResize;*/
+        </script>  
     </head>
     <body>
+        <div class="bg">
         <div class="main-grid">
             <!-- Logo -->
             <div class="grid-logo">
                 <img class="logo-image" src="assets/GigelBankCrop.png">
             </div>
-
             <!-- Nav bar -->
-            <div class="grid-nav">
-                <nav>
-                    <ul>
-                      <li><a href="home.html" class="top-level"> Home </a></li> <!--Hanna: am schimbat numele fisierul sa fie "home.html" si am pus navigation bar sa se refere la page-->
-                      <li>
-                          <div class="top-level">
-                              <a href="#"> Conturi </a>           
-                              <div class="dropdown">
-                                  <a href="#">Cont curent </a>
-                                  <a href="#">Cont pentru tineri </a>
-                              </div>
-                          </div>
-                      </li>
-                      <li><div class="top-level">
-                          <a href="#"> Credite </a>
-                              <div class="dropdown">
-                              <a href="#">Credite pentru indivizi </a>
-                              <a href="#">Credite pentru afaceri </a>
-                              <a href="#">Card de credit </a>
-                              </div>
-                          </div>
-                      </li>
-                          
-                      <li><div class="top-level">
-                          <a href="#"> Economii </a>
-                              <div class="dropdown">
-                              <a href="#">Cont de economii </a>
-                              <a href="#">Economii pe termen lung </a>
-                              <a href="#">Economii pentru copii </a>
-                              </div>
-                          </div></li>
-                      <li><div class="top-level">
-                          <a href="#"> Investitii </a>
-                              <div class="dropdown">
-                              <a href="#">Fonduri mutuale </a>
-                              <a href="#">Actiuni </a>
-                              <a href="#">The Gigel Special </a>
-                              <a href="#">Cripto </a>
-                              </div>
-                          </div></li>
-                      <li><div class="top-level">
-                          <a href="#"> About Gigel </a>
-                              <div class="dropdown">
-                              <a href="#">Povestea lui Gigel </a>
-                              <a href="#">Prospectul firmei </a>
-                              <a href="#">Cariere la GigelBank </a>
-                              </div>
-                          </div></li>
-                      <li><a href="#" class="top-level"> Contact </a></li>        
-                    </ul>
-                  </nav>
+            <div class="grid-home grid-nav"><a href="home.html" > Home </a></div>
+            <div class="grid-cont grid-nav"><a href="#" > Conturi </a>  
+                    <div class="dropdown">
+                        <div class="dropitem"><a href="#">Cont checking </a></div>
+                        <div class="dropitem"><a href="#">Cont pentru tineri </a></div>
+                        <div class="dropitem"><a href="#">Cont FlexGigel(TM) </a></div>
+                    </div>
             </div>
+            <div class="grid-credite grid-nav"><a href="#" > Credite </a>
+                <div class="dropdown">
+                    <div class="dropitem"><a href="#">Credit pentru indivizi</a></div>
+                    <div class="dropitem"><a href="#">Credit pentru afaceri</a></div>
+                    <div class="dropitem"><a href="#">Card de credit</a></div>
+                </div>
+            </div>
+            <div class="grid-economii grid-nav"><a href="#" > Economii </a>
+                <div class="dropdown">
+                    <div class="dropitem"><a href="#">Cont de economii</a></div>
+                    <div class="dropitem"><a href="#">Economii pentru termen lung</a></div>
+                    <div class="dropitem"><a href="#">Economii pentru copii</a></div>
+                </div>
+            </div> 
+            <div class="grid-investitii grid-nav"><a href="#" > Investitii </a>
+                <div class="dropdown">
+                    <div class="dropitem"><a href="#">Fonduri mutuale</a></div>
+                    <div class="dropitem"><a href="#">Actiuni</a></div>
+                    <div class="dropitem"><a href="#">Cripto</a></div>
+                    <div class="dropitem"><a href="#">The Gigel Special</a></div>
+                </div>
+            </div>
+            <div class="grid-about grid-nav"><a href="#" > About </a>
+                <div class="dropdown">
+                    <div class="dropitem"><a href="#">Povestea lui Gigel</a></div>
+                    <div class="dropitem"><a href="#">Prospectul firmei</a></div>
+                    <div class="dropitem"><a href="#">Cariere la GigelBank</a></div>
+                </div>
+            </div> 
+            <div class="grid-contact grid-nav"><a href="#" > Contact </a></div> 
+            <div class="grid-nav-empty"></div>
+        </div>
         </div>
     </body>
 </html>
