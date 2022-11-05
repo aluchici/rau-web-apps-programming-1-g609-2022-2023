@@ -132,3 +132,13 @@ body{
   grid-column-end: 12;
   background-color: black;
 }
+
+.grid-login-section {
+  grid-row-start: 3;
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+
+.padded {
+  padding-left: 10px;
+}
