@@ -133,12 +133,22 @@ body{
   background-color: black;
 }
 
+.logo-login-image{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  padding-top: 20px;
+}
+
 .grid-login-section {
-  grid-row-start: 3;
-  grid-column-start: 6;
+  grid-row-start: 4;
+  grid-column-start: 5;
   grid-column-end: 7;
 }
-/*added something*/
+
 .padded {
-  padding-left: 10px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
