@@ -109,7 +109,8 @@ margin-top: 10vh;
 
 .padded {
   padding-top: 10px;
-  border: 2px dashed #395144;
+  border: 2px solid #395144;
+  border-radius: 10px;
   margin: 0 90px;
 }
 
@@ -127,7 +128,7 @@ margin-top: 10vh;
   margin-bottom: 1.5vh;
 }
 
-/* -------------------------- RESPONSIVE PART -------------------------- */
-@media screen and (min-width: 600px) {
+/* -------------------------- RESPONSIVE PART (NETERMINATA) -------------------------- */
+/* @media screen and (min-width: 600px) {
   
-}
+} */
