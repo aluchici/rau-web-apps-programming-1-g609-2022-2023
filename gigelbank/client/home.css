@@ -14,11 +14,3 @@ background-size: cover; /*am schimbat background sa ramana la fel chiar daca ada
   box-sizing:border-box;
   font-family:'Poppins', sans-serif;
 }
-.slideBar{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%
-  width 260px;
-  background: #11101d;
-}

@@ -4,131 +4,57 @@
   <head>
     <meta charset="utf-8">   
     <title>Gigel Bank</title>  
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="styles1.css">  
     <link rel="stylesheet" href="home.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
+  </head>
     <body>
-      <br>
-    <div style="position: fixed; left:0px;top:18px;" class="log"><a href="#"><img src="assets/GigelBankCrop.png" width="150" height= "100" /></a>
-      <!--am schimbat pozitie sa fie fixed in loc de absolut-->
-    </div>
-    <div style="color: red">
-      <nav>
-        <ul>
-          <li><a href="home.html" class="top-level"> Home </a></li> <!--Hanna: am schimbat numele fisierul sa fie "home.html" si am pus navigation bar sa se refere la page-->
-          <li>
-              <div class="top-level">
-              <!--Hanna: in general am adaugat drop-down meniuri, sa aveti grija cand schimbati style pentru ca
-                  m-am bazat pe schelet pe care Antonio a pus si anumite chestii sunt legate de a si altele de div
-                  si altele de class (probabil ar fi bine sa simplifice intr-o zi)...-->
-                  <a href="#"> Conturi </a>           
-                  <div class="dropdown">
-                      <a href="#">Cont curent </a>
-                      <a href="#">Cont pentru tineri </a>
-                  </div>
-              </div>
-          </li>
-          <li><div class="top-level">
-              <a href="#"> Credite </a>
-                  <div class="dropdown">
-                  <a href="#">Credite pentru indivizi </a>
-                  <a href="#">Credite pentru afaceri </a>
-                  <a href="#">Card de credit </a>
-                  </div>
-              </div>
-          </li>
-              
-          <li><div class="top-level">
-              <a href="#"> Economii </a>
-                  <div class="dropdown">
-                  <a href="#">Cont de economii </a>
-                  <a href="#">Economii pe termen lung </a>
-                  <a href="#">Economii pentru copii </a>
-                  </div>
-              </div></li>
-          <li><div class="top-level">
-              <a href="#"> Investitii </a>
-                  <div class="dropdown">
-                  <a href="#">Fonduri mutuale </a>
-                  <a href="#">Actiuni </a>
-                  <a href="#">The Gigel Special </a>
-                  <a href="#">Cripto </a>
-                  </div>
-              </div></li>
-          <li><div class="top-level">
-              <a href="#"> About Gigel </a>
-                  <div class="dropdown">
-                  <a href="#">Povestea lui Gigel </a>
-                  <a href="#">Prospectul firmei </a>
-                  <a href="#">Cariere la GigelBank </a>
-                  </div>
-              </div></li>
-          <li><a href="#" class="top-level"> Contact </a></li>        
-        </ul>
-      </nav>
-    </div>
+      <div>
+        <nav>
+          <img class="navbar-logo"  src="assets/GigelBankCrop.png" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
 
-    <div class="sidebar">
-    <center><img class="trim" src="assets/Gigel Opaque 2.jpg"></center>
-    <div class="left-indent">
-      <br><br><br>
-      <label for="login-id">Login: &nbsp &nbsp &nbsp  </label>
-      <input type="text" id="login-id" name="login-id">
-    </div>
-    <br>
-    <div class="left-indent">
-      <label for="login-id">Parola: &nbsp &nbsp  </label>
-      <input type="text" id="login-id" name="login-id">
-  </div>
-  <center> <button class="btn btn-primary">Transmite</button></center>
-  <br>
-    <br><br>
-    <div class="link"><a href="#">Nu ai un cont? Inscrie-te! </a></div>
-    </div>
-  <font color="white">
-    <br><br><br><br><br><br><br>
-<br> <!--am o problema aici... textul se pune asupra meniuri cand facem scroll-->
-<p>Momentan am pus textul acesta sa testam daca merge bine pozitie fix pentru meniuri si login.</p>
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
-<br><br><br>
-money
+                    <li><a href="#">Conturi</a>
+                        <ul>
+                            <li><a href="#">Cont curent</a></li>
+                            <li><a href="#">Pentru tineri</a></li>
+                        </ul>
+                    </li>
 
+                    <li><a href="#">Credite</a>
+                        <ul>
+                            <li><a href="#">Pentru indivizi</a></li>
+                            <li><a href="#">Pentru afaceri</a></li>
+                            <li><a href="#">Card de credit</a></li>
+                        </ul>
+                    </li>
 
-  </font>
+                    <li><a href="#">Economii</a>
+                        <ul>
+                            <li><a href="#">Cont de economii</a></li>
+                            <li><a href="#">Pe termen lung</a></li>
+                            <li><a href="#">Pentru copii</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Investitii</a>
+                        <ul>
+                            <li><a href="#">Fonduri mutuale</a></li>
+                            <li><a href="#">Actiuni</a></li>
+                            <li><a href="#">The Gigel Special</a></li>
+                            <li><a href="#">Crypto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a>
+                        <ul>
+                            <li><a href="#">Poveste</a></li>
+                            <li><a href="#">Prospectul firmei</a></li>
+                            <li><a href="#">Cariera</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+      </div>
   </body>
-    </html>
+</html>
