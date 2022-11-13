@@ -1,67 +1,61 @@
-<!--Antonio, versiunea 1.0-->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Gigel Bank</title>
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="css/home.css" />
-  </head>
-  <body>
-    <div>
-      <nav>
-        <img class="navbar-logo" src="assets/GigelBankCrop.png" alt="logo" />
-        <ul>
-          <li><a href="#">Home</a></li>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/login.css">  
+        <link rel="stylesheet" href="css/home.css">
+        <title>Gigel Bank Login</title>
+    </head>
 
-          <li>
-            <a href="#">Conturi</a>
-            <ul>
-              <li><a href="#">Cont curent</a></li>
-              <li><a href="#">Pentru tineri</a></li>
-            </ul>
-          </li>
+    <body onload="loginStart()">
+        <div>
+            <nav>
+                <img class="navbar-logo" src="assets/GigelBankCrop.png" alt="logo">
+                <ul>
+                    <li id="salutare">Bine ai venit!</li>
+                    <li><a href="#">Conturile Mele</a>
+                        <ul>
+                            <li><a href="#">Cont curent</a></li>
+                            <li><a href="#">Cont de economii</a></li>
+                            <li><a href="#">Actiuni</a></li>
+                            <li><a href="#">Ajutor</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    <!--
+                    <li><a href="#">Credite</a>
+                        <ul>
+                            <li><a href="#">Pentru indivizi</a></li>
+                            <li><a href="#">Pentru afaceri</a></li>
+                            <li><a href="#">Card de credit</a></li>
+                        </ul>
+                    </li>
 
-          <li>
-            <a href="#">Credite</a>
-            <ul>
-              <li><a href="#">Pentru indivizi</a></li>
-              <li><a href="#">Pentru afaceri</a></li>
-              <li><a href="#">Card de credit</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="#">Economii</a>
-            <ul>
-              <li><a href="#">Cont de economii</a></li>
-              <li><a href="#">Pe termen lung</a></li>
-              <li><a href="#">Pentru copii</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Investitii</a>
-            <ul>
-              <li><a href="#">Fonduri mutuale</a></li>
-              <li><a href="#">Actiuni</a></li>
-              <li><a href="#">The Gigel Special</a></li>
-              <li><a href="#">Crypto</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">About</a>
-            <ul>
-              <li><a href="#">Poveste</a></li>
-              <li><a href="#">Prospectul firmei</a></li>
-              <li><a href="#">Cariera</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div id="main-section"></div>
-    <script src="js/home.js"></script>
-  </body>
+                    <li><a href="#">Economii</a>
+                        <ul>
+                            <li><a href="#">Cont de economii</a></li>
+                            <li><a href="#">Pe termen lung</a></li>
+                            <li><a href="#">Pentru copii</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Investitii</a>
+                        <ul>
+                            <li><a href="#">Fonduri mutuale</a></li>
+                            <li><a href="#">Actiuni</a></li>
+                            <li><a href="#">The Gigel Special</a></li>
+                            <li><a href="#">Crypto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a>
+                        <ul>
+                            <li><a href="#">Poveste</a></li>
+                            <li><a href="#">Prospectul firmei</a></li>
+                            <li><a href="#">Cariera</a></li>
+                        </ul>
+                    </li>
+                    -->
+                </ul>
+            </nav>
+        </div>
+        <script src="js/login.js"></script>
+    </body>
 </html>
