@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/login.css">  
+        <link rel="stylesheet" href="css/home.css">
+        <title>Gigel Bank Cont Curent</title>
+    </head>
+
+    <body onload="loginStart()">
+        <div>
+            <nav>
+                <img class="navbar-logo" src="assets/GigelBankCrop.png" alt="logo">
+                <ul>
+                    <li id="salutare">Bine ai venit!</li>
+                    <li><a href="#">Conturile Mele</a>
+                        <ul>
+                            <li><a href="#">Cont curent</a></li>
+                            <li><a href="#">Cont de economii</a></li>
+                            <li><a href="#">Actiuni</a></li>
+                            <li><a href="#">Ajutor</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main-section"></div>
+        <div class="tranzactii">
+            <br>
+            <br>
+            <div style="text-align: center"> 
+                <fieldset class="cutie">
+                    <p>Alege o tranzactie:</p>
+                    <br>
+                    <input type = "radio" name="tip-tranzactie" value="plata" onchange="alegeTranzactie()">
+                    <label>Plata</label>
+                    <input type = "radio" name="tip-tranzactie" value="incasare" onchange="alegeTranzactie()">
+                    <label>Incasare</label>
+                    <br><br>
+                    <div style="text-align: left" class="plata ascund">
+                        <div>Cine este destinatarul?</div>
+                        <div> <input type = "text" id="destinatar"></div>
+                        <br>
+                        <div>Ce suma a fost platit?</div>
+                        <div> <input type = "text" id="sumaplatita"></div> 
+                    </div>
+                    <div style="text-align: left" class="incasare ascund">
+                        <div>Cine este platitorul?</div>
+                        <div> <input type = "text" id="platitor"></div>
+                        <br>
+                        <div>Ce suma a platit?</div>
+                        <div> <input type = "text" id="sumaincasata"></div> 
+                    </div>
+                    <br>
+                    <button id="trimite-button" onclick="faTranzactie()">Adauga Tranzactie</button>
+                </fieldset>
+            </div>
+        </div>
+        <script src="js/login.js"></script>
+        <script src="js/contcurent.js"></script>
+    </body>
+</html>

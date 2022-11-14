@@ -6,10 +6,11 @@
         <title>Gigel Bank Login</title>
     </head>
 
-    <body onload="resetTot()">
+    <body>
         <nav>
-            <ul> <!--Hanna: am mutat meniuri cu conturi de la Cosmin la home.html, ca sa fie dupa login-->
-                <li><a href="creeaza.html">Creeaza un Cont</a></li>            
+            <img class="navbar-logo" src="assets/GigelBankCrop.png" alt="logo">
+            <ul>
+                <li><a href="login.html">Login</a></li>            
                 <li><a href="#">Despre Gigel</a>
                     <ul>
                         <li><a href="#">Produse</a></li>
@@ -29,17 +30,16 @@
                         <div class="padded">
                             <p>Username:</p>
                                 <div>
-                                    <input type="text" id="user">
+                                    <input type="text" id="creeazauser">
                                 </div>
-                            <p>Password:</p>
+                            <p>Parola (fara spatii):</p>
                                 <div>
-                                    <input type="password" id="pass">
+                                    <input type="text" id="creeazaparola">
                                 </div>
-                            <button onclick="verificaLogin()">Login</button>
+                            <button onclick="creeazaCont()">Creeaza-mi contul!</button>
                     </center> 
                 </div>
             </div>
-
         </div>
         <script src="js/login.js"></script>
     </body>

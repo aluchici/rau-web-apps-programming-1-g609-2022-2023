@@ -14,3 +14,34 @@ background-size: cover; /*am schimbat background sa ramana la fel chiar daca ada
   box-sizing:border-box;
   font-family:'Poppins', sans-serif;
 }
+
+.tranzactii {
+  color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cutie {
+  color: white;
+  background-color: black;
+  border: green solid 1px;
+  display: inline-block;
+  padding: 10px;
+  
+}
+
+#trimite-button {
+  color: green;
+  border: green 1px solid;
+  background-color: black;
+  padding: 10px;
+  border-radius: 1em;
+}
+
+#trimite-button:hover {
+  color: black;
+  background-color: greenyellow;
+}
+
+.ascund{
+  display: none;
+}
