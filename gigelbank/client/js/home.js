@@ -1,38 +1,6 @@
 // TODO: change with data from BE (in the future)
-const CONTURI = [
-    {
-        titular: "Nume si Prenume",
-        numarCont: "123456567898",
-        iban: "GHFXFT354239865498",
-        balanta: 354.24,
-        moneda: "RON",
-        ultimeleTranzactii: [
-            {
-                data: "2022-10-31",
-                suma: 31,
-                tip: "plata",
-                destinatar: "SC FIRMA SRL"
-            }
-        ]
-    },
-    {
-        titular: "Nume si Prenume 2",
-        numarCont: "1234123567898",
-        iban: "GHFXFT3542000865498",
-        balanta: 2547.24,
-        moneda: "EUR",
-        ultimeleTranzactii: [
-            {
-                data: "2022-10-30",
-                suma: 154,
-                tip: "incasare",
-                destinatar: "SC FIRMA SRL"
-            }
-        ]
-    }
-];
-
 const CONT_STYLE = "color: white";
+const CONTURI = [];
 
 const accountSection = document.getElementById("main-section");
 for (const cont of CONTURI) {

@@ -1,6 +1,4 @@
-//momentan nu avem ceva sa salvam tranzactii noi... deci doar aratam cum ar fi daca era sa modifice permanent
-
-class tranz
+class Tranz
 {
     data;
     suma;
@@ -14,84 +12,8 @@ class tranz
     }
 }
 
-const CONTURI = [
-    {
-        username: "Antonio",
-        titular: "Antonio Balasa",
-        numarCont: "100",
-        iban: "ABCDE00000",
-        balanta: 354.24,
-        moneda: "RON",
-        ultimeleTranzactii: [
-            {
-                data: "2022-10-31",
-                suma: 31.10,
-                tip: "plata",
-                parte: "Hunger SRL"
-            },
-            {
-                data: "2022-11-01",
-                suma: 50.00,
-                tip: "plata",
-                parte: "Gigel SRL"
-            },
-            {
-                data: "2022-11-02",
-                suma: 70.00,
-                tip: "incasare",
-                parte: "Universitate Romano-Americana"
-            }
-        ]
-    },
-    {
-        username: "Gigelina",
-        titular: "Gigelina Gigelescu",
-        numarCont: "101",
-        iban: "AAAAA11111",
-        balanta: 2547.24,
-        moneda: "EUR",
-        ultimeleTranzactii: [
-            {
-                data: "2022-10-30",
-                suma: 154,
-                tip: "incasare",
-                parte: "SC FIRMA SRL"
-            }
-        ]
-    },
-    {
-        username: "MosCraciun",
-        titular: "Santa Claus",
-        numarCont: "102",
-        iban: "BBBBB22222",
-        balanta: 10000.00,
-        moneda: "EUR",
-        ultimeleTranzactii: [
-            {
-                data: "2022-11-01",
-                suma: 4000,
-                tip: "incasare",
-                parte: "SC FIRMA SRL"
-            }
-        ]
-    },
-    {
-        username: "OmulPesterii",
-        titular: "Ooga Booga",
-        numarCont: "103",
-        iban: "CCCCC33333",
-        balanta: 12.00,
-        moneda: "EUR",
-        ultimeleTranzactii: [
-            {
-                data: "2022-10-30",
-                suma: 1.00,
-                tip: "incasare",
-                parte: "SC FIRMA SRL"
-            }
-        ]
-    }
-];
+// TODO: Read from file
+const CONTURI = [];
 
 let loggedUser = sessionStorage.getItem("loggedIn");
 var currentUser;
@@ -229,7 +151,7 @@ function faTranzactie()
     }
     if (tranzactieValida)
     {    
-     let noutranz = new tranz(dat, sum, tip, part);
+     let noutranz = new Tranz(dat, sum, tip, part);
     currentUser.ultimeleTranzactii.push(noutranz);
 
     const oTranz = document.createElement("tr");
