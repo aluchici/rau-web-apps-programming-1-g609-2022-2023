@@ -12,8 +12,25 @@ class Tranz
     }
 }
 
-// TODO: Read from file
+// // TODO: 
+// 1. Read from file (client/assets/conturi.json)
+// 2. Parse string using JSON.parse => list of objects
 const CONTURI = [];
+
+// read users from file
+const USERS = [];
+
+// read tranzactions from file (list [Tranz])
+const HISTORICAL_TRANSACTIONS = [];
+
+function findObject(objectPropertyName, objectPropertyValue, listOfObjects) {
+    for (const obj in listOfObjects) {
+        if (obj[objectPropertyName] == objectPropertyValue) {
+            return obj;
+        }
+    }
+    return {};
+}
 
 let loggedUser = sessionStorage.getItem("loggedIn");
 var currentUser;
