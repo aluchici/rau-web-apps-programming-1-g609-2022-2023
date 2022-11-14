@@ -101,12 +101,13 @@ margin-top: 10vh;
   padding-bottom: 3vh;
   border-radius: 15px;
 }
-
+/* nu mai este folosit
 .grid-login-section {
   grid-row-start: 4;
   grid-column-start: 5;
   grid-column-end: 7;
 }
+*/
 
 .padded {
   padding-top: 10px;
