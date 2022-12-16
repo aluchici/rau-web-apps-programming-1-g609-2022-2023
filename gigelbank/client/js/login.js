@@ -134,7 +134,6 @@ function creeazaCont() {
         document.getElementById("creeazaparola").value = "";     
         return;      
     }
-    
     if (gasit == false && parolaValida == true)
     {
         const user = new Cont(username, password);

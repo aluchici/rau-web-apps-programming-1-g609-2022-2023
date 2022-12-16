@@ -2,24 +2,32 @@ import json
 
 from flask import Flask, request
 
-from gigelbank.api.repository import insert_user, CONNECTION_STRING
-from gigelbank.api.users import User
+from gigelbank.api.account import signup
+from gigelbank.api.repository import CONNECTION_STRING
 
 app = Flask("gigelbank-api")
 
 
+@app.route("/", methods=["GET"])
+def welcome():
+    return "<h1>Welcome to Gigel Bank!</h1>"
+
+
+@app.route("/api/v1/version", methods=["GET"])
+def version():
+    response = {
+        "name": "Gigel Bank Api",
+        "version": "v.0.0.1"
+    }
+    response = json.dumps(response)
+    return response, 200, {"Content-Type": "application/json"}
+
+
 @app.route("/api/v1/register", methods=["POST"])
 def register():
-    try:
-        body = request.json
-        user = User.from_dict(body)
-        user.email = user.validate_email()
-        user.password = user.validate_password()
-        insert_user(user, CONNECTION_STRING)
-        return "", 204
-    except Exception as e:
-        error_message = {"error": f"Failed to create user. Cause: {e}"}
-        return json.dumps(error_message), 500
+    body = request.json
+    signup(body, CONNECTION_STRING)
+    return "", 204, {"Content-Type": "application/json"}
 
 
 app.run(debug=True, port=5609)
