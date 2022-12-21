@@ -1,0 +1,14 @@
+.input-spacing {
+    margin: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+.signup-form {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}

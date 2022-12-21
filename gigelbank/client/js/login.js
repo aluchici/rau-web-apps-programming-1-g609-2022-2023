@@ -69,10 +69,7 @@ function parseCont(contString)  {
     }
 }
 
-function loginStart() {
-    let loggedUser = JSON.parse(sessionStorage.getItem("loggedIn"));
-    document.getElementById("salutare").innerHTML = "Bine ai venit, " + loggedUser.username + "!";
-}
+
 
 function verificaLogin() {
     //ar fi bine sa nu fie client-side, dar pana cand invatam server-side, aia e...
